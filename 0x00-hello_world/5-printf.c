@@ -1,11 +1,10 @@
 #include <stdio.h>
 /**
-*main - puts the string into the output
-*put - displays the output
-*Return: 0 shows function does not return a value
+*main - print a string
+*Return: 0 if the program runs successfully
 */
-int main(void)
-{
-printf("\"with proper grammar, but the outcome is a piece of art,")
-return (0);
+int main(void) 
+{  
+printf("with proper grammar, but the outcome is a piece of art,\n");
+return (0); 
 }
