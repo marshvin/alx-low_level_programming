@@ -1,6 +1,4 @@
-
-
-0;276;0c#include <stdio.h>
+#include <stdio.h>
 /**
 *main - puts the string into the output
 *put - displays the output
