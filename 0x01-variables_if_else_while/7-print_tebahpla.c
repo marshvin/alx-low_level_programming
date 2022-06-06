@@ -1,4 +1,4 @@
-#stdio.h>
+#include stdio.h>
 /**
 * main - prints lowercase letters of the alphabet in reverse
 * Return: 0 for successful exit status
