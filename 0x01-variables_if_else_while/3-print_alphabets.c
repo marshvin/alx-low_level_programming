@@ -12,7 +12,7 @@ while (cl <= 'z')
 putchar(cl);
 cl++;
 }
-while (cu <= 'Z'
+while (cu <= 'Z')
 {
 putchar(cu);
 cu++;
