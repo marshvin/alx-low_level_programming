@@ -1,6 +1,8 @@
 #include "main.h"
 /**
-* _putchar - print out  a string 
+* _putchar - print out  a string
+* main - runs the program
+* Return value:displays the output
 * Return : 0 when the program runs
 */
 int main(void)
