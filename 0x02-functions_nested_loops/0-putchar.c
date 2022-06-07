@@ -2,7 +2,6 @@
 /**
 * _putchar - print out  a string 
 * Return : 0 when the program runs
-* main - prints putchar and a newline
 */
 int main(void)
 {
