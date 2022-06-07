@@ -1,13 +1,19 @@
 #include "main.h"
 /**
 * _putchar - print out  a string 
-* Return value : Always 0
+* Return : 0 when the program runs
+* main - prints putchar and a newline
 */
-int _putchar(char c)
+int main(void)
 {
-unsigned int i;
-char stringArray[8] = {'_','p','u','t','c','h','a','r'};
-for ( i = 0; i < sizeof(stringArray); i++)
-printf("%c",stringArray[i]);
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
