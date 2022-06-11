@@ -1,9 +1,3 @@
-s (18 sloc)  242 Bytes
-
-
-
-
-
 #include "main.h"
 /**
 * _isdigit - checks for a digit (0 through 9)
