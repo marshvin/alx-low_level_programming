@@ -16,5 +16,5 @@ _putchar(m / 10 + '0');
 _putchar(m % 10 + '0');
 _putchar('\n');
 }
-} 
+}
 }
