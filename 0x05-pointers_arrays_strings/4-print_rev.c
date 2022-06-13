@@ -4,7 +4,7 @@
  *@s: string to reverse
  *Return: Nothing
 */
-void rev_string(char *s)  
+void print_rev(char *s)  
 {
 int len, i;
 char l;
