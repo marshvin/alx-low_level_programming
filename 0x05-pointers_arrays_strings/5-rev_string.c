@@ -13,7 +13,7 @@ count++;
 }
 end = s;
 start = s;
- for (i = 0; i < count - 1; i++)
+for (i = 0; i < count - 1; i++)
 {
 end++;
 }
