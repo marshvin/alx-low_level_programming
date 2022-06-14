@@ -3,7 +3,7 @@
  * puts_half - prints 2nd half of a string
  * @str: string to be processed
 */
-void puts_half(char *str)  
+void puts_half(char *str)
 {
 int i, n, count = 0;
 char *ptr = str;
@@ -28,5 +28,5 @@ for (i = n; i < count - 1; i++)
 _putchar(str[i + 1]);
 }
 }
-_putchar('\n');  
+_putchar('\n');
 }
