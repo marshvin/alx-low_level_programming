@@ -21,8 +21,8 @@ for (j = 0; j < count / 2; j++)
 {
 tmp = *end;
 *end = *start;
-*start=tmp
-start++;   
+*start=tmp;
+start++;
 end--;
 }  
 }
