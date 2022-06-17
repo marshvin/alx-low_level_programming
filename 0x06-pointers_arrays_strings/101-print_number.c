@@ -1,15 +1,18 @@
 #include "main.h"
-int main(void)
+/**
+ *print_number - prints integers
+ *@n: number to be printed
+ *Return: nothing
+ */
+void print_number(int n)
 {
-    print_number(98);
-    _putchar('\n');
-    print_number(402);
-    _putchar('\n');
-    print_number(1024);
-    _putchar('\n');
-    print_number(0);
-    _putchar('\n');
-    print_number(-98);
-    _putchar('\n');
-    return (0);
+unsigned int y = n;
+if (n < 0)
+{
+_putchar('-');
+y = -y;
+}
+if ((y / 10) > 0)
+print_number(y / 10);
+_putchar((y % 10) + '0');
 }
