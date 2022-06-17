@@ -5,13 +5,13 @@
  *@s: poiter of character
  *Return: the length of a string
 */
-int _strlen(char *s) 
+int _strlen(char *s)
 {
-  int len;
-  len = 0;
-  while (*(s + len) != '\0')
-    len++;
-  return (len); 
+int len;
+len = 0;
+while (*(s + len) != '\0')
+len++;
+return (len); 
 }
 /**
  * *_strncat - concatenates two strings
@@ -19,7 +19,7 @@ int _strlen(char *s)
  *@src: string origin
  *@n: number of bytes
  *Return: dest
- */
+*/
 char *_strncat(char *dest, char *src, int n)
 {
 int i, len;
