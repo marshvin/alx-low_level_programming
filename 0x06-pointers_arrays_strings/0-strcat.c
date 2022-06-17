@@ -18,14 +18,14 @@ return (len);
  *@src: string origin
  *Return: dest
 */
-char *_strcat(char *dest, char *src) 
+char *_strcat(char *dest, char *src)
 {
-  int i, lendest, lensrc;
-  lendest = _strlen(dest);
-  lensrc = _strlen(src);
-  for (i = 0; i < lensrc; i++)
-    {
-      dest[lendest + i] = src[i]; 
-    }
-  return (dest); 
+int i, lendest, lensrc;
+lendest = _strlen(dest);
+lensrc = _strlen(src);
+for (i = 0; i < lensrc; i++)
+{
+dest[lendest + i] = src[i];
+}
+return (dest);
 }
