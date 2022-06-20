@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 /**
  * *_memset - copies a character to the firstn characters of the string pointed
  *@s: original string
