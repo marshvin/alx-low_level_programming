@@ -1,18 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
-
  * **alloc_grid - 2 dimensional array of integers
-
  *@width: with of the grid
-
  *@height: height of the grid
-
  *Return: 0 (success)
-
- */
+ *function alloc_grid - returns two dimensional array
+*/
 int **alloc_grid(int width, int height)
 {
 int **grid;
