@@ -6,13 +6,13 @@
 *@s: poiter of character
 *Return: the length of a string
 */
-int _strlen(char *s)  
+int _strlen(char *s)
 {
 int len;
 len = 0;
 while (*(s + len) != '\0')
 len++;
-return (len); 
+return (len);
 }
 /**
  * *str_concat - concatenates two strings
@@ -38,7 +38,7 @@ l2 = _strlen(s2);
 /**assign memory*/
 /**increments l2 for the null character*/
 l2++;
-concat = malloc((l1 + l2) * sizeof(*concat));
+concat = malloc((l1 + l2) *sizeof(*concat));
 /**verify if memory fails*/
 if (concat == NULL)
 return (NULL);
