@@ -1,26 +1,51 @@
-#include "variadic_functions.h"
+#include <stdlib.h>
+#include <stdarg.h>
 #include <stdio.h>
 /**
- * print_strings - prints string passed as arguments
- * @separator: to be printed between strings
- * @n: number of strings to be printed
+* print_all - function that prints anything
+*@format: list of types of arguments passed to function
+*Return: Nothing
 */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_all(const char * const format, ...)
 {
-unsigned int i;
-char *str;
-va_list ap;
-va_start(ap, n);
-for (i = 0; i < n; i++)
-{
-str = va_arg(ap, char*);
-if (str)
-printf("%s", str);
-else
-printf("(nil)");
-if (separator && i != n - 1)
-printf("%s", separator);
-}
-va_end(ap);
-printf("\n");
+	va_list anything;
+	int i = 0;
+	char *string;
+
+	va_start(anything, format);
+	while (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
+	while (format[i] != '\0')
+	{
+		switch (format[i])
+		{
+			case 'c':
+				printf("%c", (char) va_arg(anything, int));
+				break;
+			case 'i':
+				printf("%d", va_arg(anything, int));
+				break;
+			case 'f':
+				printf("%f", (float) va_arg(anything, double));
+				break;
+			case 's':
+				string = va_arg(anything, char *);
+				if (string != NULL)
+				{
+					printf("%s", string);
+					break;
+				}
+				printf("(nil)");
+				break;
+		}
+		if ((format[i] == 'c' || format[i] == 's' || format[i] == 'i'
+			|| format[i] == 'f') && (format[i + 1] != '\0'))
+			printf(", ");
+		i++;
+	}
+	va_end(anything);
+	printf("\n");
 }
