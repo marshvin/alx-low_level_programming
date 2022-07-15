@@ -3,11 +3,9 @@
 /**
  * print_list - Function that prints all the elemets of a list_t list
  *@h: receive the list to print
-
  *Return: the number of nodes
  */
-size_t print_list(const list_t *h)
-  
+size_t print_list(const list_t *h) 
 {
 size_t counter;
 counter = 0;
