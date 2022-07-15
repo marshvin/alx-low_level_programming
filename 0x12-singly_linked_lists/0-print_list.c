@@ -19,19 +19,11 @@ printf("[0] (nil)\n");
 h = h->next;
 }
 else
-	
-	{
-	  
-	  printf("[%d] %s\n", h->len, h->str);
-	  
-	  h = h->next;
-	  
-	}
-      
-      counter++;
-      
-    }
-  
-  return (counter);
-  
+{
+printf("[%d] %s\n", h->len, h->str);
+h = h->next;
+}
+counter++;
+}
+return (counter);  
 }
