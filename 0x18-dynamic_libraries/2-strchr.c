@@ -2,51 +2,22 @@
 #include <stdio.h>
 
 /**
- * _strlen - returns the lenght of a string
- *@s: poiter of character
- *Return: the length of a string
+ * *_strchr - locates a character in a string
+ * @s: string to search
+ * @c: char to find
+ *
+ * Return: a pointer to the first occurence of the character
+ * c in the string s, or NULL if the character is not found
  */
 
-int _strlen(char *s)
-  
+char *_strchr(char *s, char c)
 {
-  
-  int len;
-  
+	unsigned int a = 0;
 
-  
-  len = 0;
-  
-  while (*(s + len) != '\0')
-    
-    len++;
-  
-  return (len);
-  
-}
-/**
- * *_strncat - concatenates two strings
- *@dest: string to print
- *@src: string origin
- *@n: number of bytes
- *Return: dest
- */
-
-char *_strncat(char *dest, char *src, int n)
-  
-{
-  
-  int i, len; 
-  len = _strlen(dest);
-  
-  for (i = 0; (i < n && src[i] != '\0'); i++)
-    
-    {
-      
-      dest[len + i] = src[i];
-      
-    }
-  
-  return (dest);
-  
+	for (; *(s + a) != '\0'; a++)
+		if (*(s + a) == c)
+			return (s + a);
+	if (*(s + a) == c)
+		return (s + a);
+	return ('\0');
 }
