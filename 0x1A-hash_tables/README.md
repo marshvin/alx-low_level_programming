@@ -1,5 +1,5 @@
 <h3> Tasks </h3>
-<h3 <a href="0-hash_table_create.c">>0-hash_table_create.c Write a function that creates a hash table.</h3>
+ <a href="0-hash_table_create.c"><h3>0-hash_table_create.c Write a function that creates a hash table.</h3></a>
 <ol>
 <li>Prototype: hash_table_t *hash_table_create(unsigned long int size);</li>
 <li>where size is the size of the array</li>
