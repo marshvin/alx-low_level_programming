@@ -28,3 +28,17 @@
 <li>n case of collision, add the new node at the beginning of the list</li>
 </ol>
 <br>
+<h3>Write a function that retrieves a value associated with a key</h3>
+<ol>
+<li>Prototype: char *hash_table_get(const hash_table_t *ht, const char *key);</li>
+<li>Returns the value associated with the element, or NULL if key couldn’t be found</li>
+</ol>
+<br>
+<h3><a href ="5-hash_table_print.c">Write a function that prints a hash table.</h3>
+<ol>
+<li>Prototype: void hash_table_print(const hash_table_t *ht);</li>
+<li>You should print the key/value in the order that they appear in the array of hash table <br>
+Order: array, list</li>
+<li>If ht is NULL, don’t print anything</li>
+</ol>
+<br>
