@@ -1,5 +1,5 @@
 <h3> Tasks </h3>
-<h3>Write a function that creates a hash table.</h3>
+<h3 <a href="0-hash_table_create.c">>0-hash_table_create.c Write a function that creates a hash table.</h3>
 <ol>
 <li>Prototype: hash_table_t *hash_table_create(unsigned long int size);</li>
 <li>where size is the size of the array</li>
@@ -34,7 +34,7 @@
 <li>Returns the value associated with the element, or NULL if key couldn’t be found</li>
 </ol>
 <br>
-<h3><a href ="5-hash_table_print.c">Write a function that prints a hash table.</h3>
+<h3<a href ="5-hash_table_print.c">>Write a function that prints a hash table.</h3>
 <ol>
 <li>Prototype: void hash_table_print(const hash_table_t *ht);</li>
 <li>You should print the key/value in the order that they appear in the array of hash table <br>
